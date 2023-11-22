@@ -1,0 +1,71 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+:root {
+    --body_bg: #1b1b1b;
+    --whitefont: #ffffff;
+    --blackfont: #000000;
+    --white: #ffffff;
+    --black: #000000;
+    --greyfont: rgba(255,255,255,0.5);
+    --themeorange: #ff7755;
+    --themeblue: #77b5fe;
+    --themegreen: #47cf73;
+    --mobile_padding: 218px;
+    --desktop_padding: 310px;
+    --before-load: #252525;
+    --h2_font: 8.8vw
+}
+
+
+html {scroll-behavior: smooth;}
+
+::-webkit-scrollbar {width: 8px;}
+
+::-webkit-scrollbar-track {background-color: var(--body_bg);}
+
+::-webkit-scrollbar-thumb {background-color: var(--white);}
+
+::selection{background-color: var(--themeorange);}
+
+*{margin:0px; padding: 0px; box-sizing: border-box; -webkit-tap-highlight-color: transparent;}
+
+body{background: var(--body_bg); display: block; color: var(--whitefont); line-height: 1; letter-spacing: 0.5px; font-weight: 400; font-family: 'Montserrat', sans-serif;}
+
+section{overflow-x: hidden;}
+
+li{list-style: none;}
+
+p{font-size: 3.467vw; line-height: 4.5vw; font-weight: 400;}
+
+h2{font-size: var(--h2_font); line-height: 9vw; font-weight: 800; text-transform: uppercase; font-style: italic; opacity: 0.8;}
+
+button{cursor: pointer; outline: none; border: none; transition: .5s; background: var(--themeorange); color: var(--whitefont); padding: 10vw; border-radius: 50%; position: relative; display: block; font-size: 3.5vw; text-transform: uppercase; animation: btn-anim 7s linear infinite;}
+
+button:hover{background: black; transition: .5s;}
+
+button a{position: absolute; width: max-content; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+@keyframes btn-anim {from {transform: rotate(0deg);} to {transform: rotate(360deg);}}
+
+a{text-decoration: none; cursor: pointer; color: var(--whitefont);}
+
+section{overflow-x: hidden; background: var(--body_bg);}
+
+video{max-width: 100%; height: 100%; background: var(--before-load); object-fit: cover;}
+
+img{width: 100%; background: var(--before-load); object-fit: cover;}
+
+
+
+@media(min-width: 768px){
+
+p{font-size: 1.2vw; line-height: 2.2vw;}
+
+h2{font-size: 5.5vw; line-height: 110%;}
+
+button{padding: 4.3vw; font-size: 1.5vw;}
+
+video{width: -webkit-fill-available;}
+
+
+}

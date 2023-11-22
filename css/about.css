@@ -1,0 +1,115 @@
+@import url(../assets/com.css);
+
+
+/* =========== About Section ==================*/
+.main{position: relative; z-index: 20;}
+
+.about-text{position: fixed; top: 3vh; right: 2.5vh; font-size: 4vw; font-weight: 400; font-style: italic;}
+
+
+/*== Heading ==*/
+
+.hds{position: fixed; top: 3vh; margin-left: 6vw;}
+
+.hd{position: absolute; transform-origin: bottom left; transform: rotate(90deg);}
+
+.hd h2{font-size: 16vw; font-weight: 800; font-style: italic; text-transform: uppercase; width: max-content; transform: scale(-1);}
+
+.hd1, .hd2, .hd3, .hd4, .hd5 {opacity: 0; transition: opacity 0.6s;}
+
+.hd1{opacity: 0.7;}
+
+
+/*== Para ==*/
+
+.para-wrapper{padding-top: 155vw;}
+
+.para{text-align: justify; transition: all 0.5s;}
+
+.para:nth-last-child(1){margin-bottom: 0;}
+
+.para span{font-size: 4vw; font-style: italic; display: block; padding-bottom: 4vw; text-transform: uppercase; font-weight: 400;}
+
+.para p{font-size: 4vw; line-height: 120%; font-weight: 200;}
+
+.para1{margin: 0 5.7vw 70vh 38.3vw;}
+
+.para2{margin: 0 5.7vw 70vh 37vw;}
+
+.para3{margin: 0 5.7vw 70vh 33vw;}
+
+.para4{margin: 0 5.7vw 70vh 39vw;}
+
+.para5{margin: 0 5.7vw 70vh 42vw;}
+
+.para5-p1, .para5-p2, .para5-p3{transition: opacity 0.6s; margin-bottom: 70vh; position: relative;}
+
+.para5-p1::after, .para5-p2::after, .para5-p3::after, .para5-p4:after{content: ''; position: absolute; top: 6%; left: -8%; padding: 1vw; background: rgba(255,255,255,0.7); border-radius: 50%;}
+
+.para5-p4{margin-bottom: 0;}
+
+
+
+/*===== Button =====*/
+
+.btn{background: var(--body_bg);z-index: 20; position: relative; padding-bottom: 26vw;}
+
+.btn a{border-radius: 50%;}
+
+.btn-circle{position: relative; padding: 15vw; background: white; color: black; border-radius: 50%; outline: none; border: solid 1px white; display: block; margin: 0 auto; width: fit-content; animation: spinning-btn 7s linear infinite; transition: all 0.5s;}
+
+.btn-circle span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.btn-circle:hover{background: transparent; color: white; transition: all 0.5s;}
+
+@keyframes spinning-btn{from{transform: rotate(0deg);} to{transform: rotate(360deg);}}
+
+
+
+
+
+
+
+/*====================================================== Desktop ====================================*/
+
+@media (min-width: 768px){
+
+
+/*=================== About Section ==================*/
+
+#bg-img, #bg-img2{right: 5%;}
+
+.about-text{top: 5vw; right: 5.8vw; font-size: 1.5vw; font-weight: 200;}
+
+.hds{top: 5vh; margin-left: 8.5vw;}
+
+.hd{transform: none;}
+
+.hd h2{font-size: 8vw; transform: none;}
+
+.para-wrapper{padding-top: 80vh;}
+
+.para{margin: 0 52vw 70vh 8.7vw;}
+
+.para span{font-size: 1.6vw; padding-bottom: 2vw; font-weight: 400; padding-left: 1%;}
+
+.para p{font-size: 1.6vw; line-height: 120%; font-weight: 200;}
+
+.para5-p1, .para5-p2, .para5-p3, .para5-p4 {margin-bottom: 70vh;}
+
+.para5-p1::after, .para5-p2::after, .para5-p3::after, .para5-p4:after{top: 8px; left: -4%; padding: 0.3vw;}
+
+.btn{padding-bottom: 20vw;}
+
+.btn-circle{padding: 7.5vw; font-size: 1.8vw; font-weight: 100;}
+
+
+
+
+
+}
+
+
+
+
+

@@ -1,0 +1,264 @@
+@import url(../assets/com.css);
+
+.sk1-5, .sk6-9, .sk10-12, .sk13{z-index: 3; position: relative;}
+
+.main-bg{position: sticky; top: 0; width: 100%; height: 100vh; z-index: 2; filter: brightness(0.4);}
+
+.main-bg img{height: 100%;}
+
+.sk1-5 img, .sk6-9-parent img, .sk10-12 img, .sk13 img{filter: brightness(0.7);}
+
+
+
+/*================= Hero =================*/
+
+.hero {overflow: hidden; position: absolute; top: 0; height: 100%; width: 100%; color: var(--whitefont);}
+
+.hero img{background: transparent;}
+
+.herowrapper {display: flex; position: relative; height: 100%; width: 100%;}
+
+
+
+/*== Col_1 ==*/
+
+.hero_col_1{min-width: 13%; max-width: 13%; z-index: 2;}
+
+.hero_col_1 .content {min-width: 100%; max-width: 100%; height: -webkit-fill-available; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 13vw 0vw;}
+
+.hero_side_span {transform: rotate(90deg) scale(-1, -1); white-space: nowrap; text-transform: uppercase;}
+
+.hero_uppercase{font-size: 3.9vw; font-weight: 600;}
+
+.hero_lowercase{font-size: 2.9vw; font-weight: 400;}
+
+
+
+/*== Col_2 ==*/
+
+.hero_col_2{min-width: 73%; max-width: 73%; padding: 15vw 0vw; z-index: 2;}
+
+.hero_col_2 .content{position: relative; min-height: 100%;}
+
+.hero_img{position: absolute; width: 100%; height: 100%;}
+
+.hero_img img{height: 100%;}
+
+.hero_h1 {position: absolute; text-transform: uppercase; font-style: italic; width: 100%; transform-origin: center center; transform: rotate(90deg) scale(-1, -1) translateY(-1.7vw); display: flex; align-items: center; justify-content: center; min-height: 100%; font-size: 8.8vw; white-space: nowrap; opacity: 0.8;}
+
+#scroll_down{display: none;}
+
+
+
+/*== Col_3 ==*/
+
+.hero_col_3{min-width: 14%; max-width: 14%; display: flex; align-items: center; justify-content: center; z-index: 2;}
+
+.hero_col_3 .content{transform: translateX(-6vw) translateY(-14vw); cursor: pointer;}
+
+#circular-text {text-transform: uppercase; font-size: 2vw; font-weight: 600; position: relative; border-radius: 100%; animation: rotating 13s linear infinite}
+
+@keyframes rotating {from {transform: rotate(0deg);} to {transform: rotate(360deg);}}
+
+#circular-text span {position: absolute; transform-origin: top left;}
+
+
+
+/*========== Skills 1-5 =========*/
+
+.sk1-5{overflow: visible; padding: calc(9.5vw + var(--mobile_padding)) 0 8vw;}
+
+.sk1-5 .wrapper{position: relative;}
+
+
+
+/*Image*/
+
+.sk1-5-img{width: 70vw; height: 130vw; position: sticky; top: 18vh;}
+
+.sk1-5-img picture{position: absolute; top: 0; width: 100%; height: 100%; transition: 1s;}
+
+.sk1-5-img picture img{width: 100%; height: 100%}
+
+#sk1-img{z-index: 5;}
+
+#sk2-img{z-index: 4;}
+
+#sk3-img{z-index: 3;}
+
+#sk4-img{z-index: 2;}
+
+#sk5-img{z-index: 1;}
+
+
+
+/*Content*/
+
+.sk1-5-text{margin-bottom: 80vh; padding: 9.5vw 0 8vw;}
+
+.sk1-text{margin-bottom: 0; position: absolute; top: -9.5vw; width: 100%;}
+
+.sk2-text{margin-top: 80vh;}
+
+.sk5-text{margin-bottom: 0; padding-bottom: 0;}
+
+.sk1-5-text .container{width: 100%; height: 130vw; position: relative;}
+
+.sk1-5-h2{position: absolute; top: -7%; left: 2.7vw;}
+
+.sk1-5-h2 h2{line-height: 78%;}
+
+.sk1-5-h2 span{color: transparent; -webkit-text-stroke: 0.5px var(--white);}
+
+.sk2-text .sk1-5-h2 span{display: block; float: right; padding-right: 10%; padding-top: 2.6%;}
+
+.sk1-5-side{position: absolute; top: 30%; right: 23%; transform-origin: bottom left; transform: rotate(90deg);}
+
+.sk1-5-side span{position: relative; font-size: 3.3vw;}
+
+.sk1-5-side span::after{content: ""; position: absolute; top: calc(50% - 1px); left: 150%; width: 8vw; height: 1px; background: var(--themeorange);}
+
+.sk1-5-para{position: absolute; right: 2.7vw; bottom: -6%; width: 50vw; backdrop-filter: blur(20px); background: rgba(0,0,0, 3%); padding: 3vw;}
+
+
+
+
+/*========== Skills 6-9 =========*/
+
+.sk6-9-parent{padding: calc(var(--mobile_padding) - 8vw) 0;}
+
+.sk6-9-wrapper{padding-bottom: 8vw; position: relative;}
+
+.sk6-9-wrapper::before{content: ""; position: absolute; bottom: 0; width: 100%; height: 95%; backdrop-filter: blur(20px) saturate(1.5); z-index: 2;}
+
+.sk6-9{width: 100%; margin-bottom: var(--mobile_padding);}
+
+.sk6-9-img{width: 100%; position: relative;}
+
+.sk6-9-img img{height: 85vw; width: 80vw;}
+
+.sk6-9-img h2{position: absolute; top: 20%; right: 5%; color: rgba(255,255,255,0.7); opacity: 1;}
+
+.sk6-9-img h2 span{display: block; color: transparent; -webkit-text-stroke: 0.5px var(--white); width: max-content;}
+
+.sk6-9-number{position: relative; font-size: 3.3vw;}
+
+.sk6-9-number::after{content: ""; position: absolute; top: calc(50% - 1px); left: 160%; width: 8vw; height: 1px; background: var(--themeorange);}
+
+.sk6-9-dec{width: 100%; text-align: justify;}
+
+.sk6 .sk6-9-dec{padding: 10% 20% 0 19%;}
+
+.sk7 .sk6-9-dec{padding: 10% 16% 0 20%;}
+
+.sk8 .sk6-9-dec{padding: 10% 20% 0 17%;}
+
+.sk9 .sk6-9-dec{padding: 10% 20% 0 20%;}
+
+.sk6-9-para{padding-top: 12%;}
+
+
+
+/*Extra*/
+
+.sk7 .sk6-9-img img, .sk9 .sk6-9-img img{display: block; margin: 0 0 0 auto;}
+
+.sk6 .sk6-9-img h2{padding-right: 0.6%;}
+
+.sk6 .sk6-9-img h2 span{margin-left: -2%;}
+
+.sk7 .sk6-9-img h2 , .sk9 .sk6-9-img h2{left: 5%; right: auto;}
+
+.sk7 .sk6-9-img h2, .sk9 .sk6-9-img h2{padding-left: 2%;}
+
+.sk7 .sk6-9-img h2 span, .sk9 .sk6-9-img h2 span{margin-left: -2.4%;}
+
+.sk9{margin-bottom: 0;}
+
+
+
+
+/*========== Skills 10-12 =========*/
+
+.sk10-12{overflow: visible; padding: 9.5vw 0 8vw;}
+
+.sk10-12 .wrapper{position: relative;}
+
+
+
+/*Image*/
+
+.sk10-12-img{width: 70vw; height: 130vw; position: sticky; top: 18vh;}
+
+.sk10-12-img picture{position: absolute; top: 0; width: 100%; height: 100%; transition: 1s;}
+
+.sk10-12-img picture img{width: 100%; height: 100%}
+
+#sk10-img{z-index: 3;}
+
+#sk11-img{z-index: 2;}
+
+#sk12-img{z-index: 1;}
+
+
+
+
+/*Content*/
+
+.sk10-text{position: absolute; top: -9.5vw; width: 100%; padding: 9.5vw 0 8vw;}
+
+.sk11-text{margin: 80vh 0; padding: 9.5vw 0 8vw;}
+
+.sk12-text{padding: 9.5vw 0 0;}
+
+.sk10-12-text .container{width: 100%; height: 130vw; position: relative;}
+
+.sk10-12-h2{position: absolute; top: -7%; left: 2.7vw;}
+
+.sk10-12-h2 h2{line-height: 78%;}
+
+.sk10-12-h2 span{color: transparent; -webkit-text-stroke: 0.5px var(--white); display: block; float: right; padding: 2.6% 15% 0 0;}
+
+.sk12-text .sk10-12-h2 span{display: contents; padding: 0;}
+
+.sk10-12-side{position: absolute; top: 30%; right: 23%; transform-origin: bottom left; transform: rotate(90deg);}
+
+.sk10-12-side span{position: relative; font-size: 3.3vw;}
+
+.sk10-12-side span::after{content: ""; position: absolute; top: calc(50% - 1px); left: 150%; width: 8vw; height: 1px; background: var(--themeorange);}
+
+.sk10-12-para{position: absolute; right: 2.7vw; bottom: -6%; width: 50vw; backdrop-filter: blur(20px); background: rgba(0,0,0, 3%); padding: 3vw;}
+
+
+
+
+
+/*================= Sk13 =================*/
+
+.sk13{padding: calc(var(--mobile_padding) + 2.5vw) 0 37vw;}
+
+.sk13-wrapper{display: flex;}
+
+.sk13 p{opacity: 0.8;}
+
+.sk13 h2{font-size: 10.9vw;}
+
+.sk13-h2{max-width: 29%;}
+
+.sk13-h2 div{width: max-content; transform: rotate(90deg) translateY(-20%); transform-origin: bottom left; margin-top: -47%;}
+
+.sk13-h2 div h2, .sk13-h2 div p{transform: scale(-1);}
+
+.sk13-h2 #mob-break{display: block;}
+
+.sk13-bold-side{display: none;}
+
+.sk13-content{max-width: 71%; position: relative;}
+
+.sk13 img{height: 130vw;}
+
+
+
+/*== Button ==*/
+
+.sk13-btn{width: max-content; position: absolute; bottom: -9%; right: 10%; z-index: 2;}

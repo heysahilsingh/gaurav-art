@@ -1,0 +1,182 @@
+<style>
+
+header{color: #fff; font-size: 3.5vw; overflow: hidden;}
+    
+header img{background: transparent;}
+    
+
+/*======== Menu Content ========*/
+
+.menu-content{transform: translateY(110vh); display: flex; z-index: 500; position: fixed; height: 100%; width: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(20px) saturate(1.2); padding: 6vw; flex-wrap: wrap; transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;}
+
+    
+/*Nav Links*/
+    
+.nav-links{text-align: center; min-width: 100%; align-self: flex-start; padding-top: 4vw;}
+
+.nav-links a{font-size: calc(12.5vw - 1px); color: transparent; -webkit-text-stroke: 0.5px rgba(255,255,255,0.6); font-weight: 800; font-style: italic; letter-spacing: 1px; transition: all 0.5s ease-in-out;}
+
+.nav-links a:hover{color: rgba(255,255,255,0.3); -webkit-text-stroke: 0.5px rgba(255,255,255,0); transition: all 0.5s ease-in-out;}
+
+.nav-home, .nav-skills, .nav-work{margin-bottom: 16%;}
+
+.nav-skills{padding-left: 2%;}
+
+.nav-home{padding-left: 4%;}
+
+.nav-about{padding-right: 1%;}
+
+    
+/*Sipinning Contact*/
+    
+.header-contact{min-width: 100%; align-self: center;}
+    
+.header-contact a{color: inherit;}
+
+.hcontact-circle{animation: spinning-hc linear 7s infinite; cursor: pointer; color: #000; background: rgba(255,255,255,0.8); border: solid 1px rgba(255,255,255,0.4); height: 30vw; width: 30vw; display: block; position: relative; border-radius: 50%; margin: auto; transition: all 0.5s ease-in-out;}
+
+.hcontact-circle a{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: max-content; text-transform: uppercase;}
+
+.hcontact-circle:hover{background: transparent; color: #fff; transition: all 0.5s ease-in-out;}
+
+@keyframes spinning-hc{from{transform: rotate(0deg);} to{transform: rotate(360deg);}}
+
+    
+/*Social Links*/
+    
+.header-footer{min-width: 100%; align-self: flex-end;}
+    
+.header-footer span{padding-bottom: 3.5vw; display: block; opacity: 0.5;}
+    
+.hfooter-social a{margin-right: 8vw;}
+    
+.hfooter-social img{width: 8vw; cursor: pointer; border-radius: 50%; opacity: 0.5; transition: all 0.3s ease-in-out;}
+    
+#nav-wa:hover{opacity: 1; background: #25D366; transition: all 0.3s ease-in-out;}
+    
+#nav-ins:hover{opacity: 1; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  transition: all 0.3s ease-in-out;}
+    
+#nav-lin:hover{opacity: 1; background:  #0077b5; transition: all 0.3s ease-in-out;}
+    
+#nav-fb:hover{opacity: 1; background: #4267B2; transition: all 0.3s ease-in-out;}
+    
+    
+    
+/*======== Menu Icon ========*/
+    
+.menuicon {cursor: pointer; backdrop-filter: blur(2.5px); border: solid 0.5px rgba(255,255,255,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px; width: 50px; height: 50px; z-index: 600; position: fixed; border-radius: 50%; right: 4vw; bottom: 4vw; transition:  0.6s;}
+    
+.icon{position: relative; height: 100%; width: 100%;}   
+    
+.icon span{background-color: white; display: block; height: 1px; width: 100%; position: absolute; transition: 0.7s;}
+    
+.bar1{top: 18%;}
+    
+.bar2{bottom: 18%;}
+    
+svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 50px;}
+    
+.menu-circle{stroke-dasharray: 154; stroke-dashoffset: 154; transition: 0.7s;}
+    
+.menu-content-open{transform: translateY(0); transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;}
+    
+.body-menu-open{overflow-y: hidden;}
+    
+.rotate-bar1{transform: rotate(45deg); top: calc(50% - 0.5px);}
+    
+.rotate-bar2{transform: rotate(-45deg); bottom: calc(50% - 0.5px);}
+    
+.rotate-menuicon{transform: rotate(180deg);}
+    
+.menu-circle-active{stroke-dashoffset: 0;}
+
+
+/* =========== Desk ==========*/
+
+@media(min-width: 768px){
+
+header{font-size: 1.5vw; font-weight: 200;}
+
+.menu-content{padding: 5vw 13vw 5vw 7vw; flex-wrap: nowrap; flex-direction: row-reverse;}
+
+.nav-links{text-align: right; min-width: 50%; padding-top: 0vw; height: -webkit-fill-available; display: flex; flex-direction: column; justify-content: space-between;}
+
+.nav-links a{font-size: calc(5vw - 1px); -webkit-text-stroke: 1px rgba(255,255,255,0.6);}
+
+.nav-links span{padding-right: 1.8%;}
+
+.desk-nav{margin-top: -0.5vw;}
+
+.nav-home, .nav-skills, .nav-work{margin-bottom: 0;}
+
+.nav-home{padding-left: 2.5%;}
+
+.nav-skills {padding-left: 55%;}
+
+.nav-work{padding-right: 2%;}
+
+.nav-about{padding-right: 0.5%;}
+
+.header-contact{min-width: 0%; max-width: 0%; align-self: center; height: -webkit-fill-available;}
+
+.hcontact-circle{height: 15vw; width: 15vw; top: 15vh; left: 10vw; position: absolute; font-size: 1.8vw; font-weight: 100;}
+
+.header-footer{min-width: 50%; align-self: flex-end; height: -webkit-fill-available; display: flex; flex-direction: column; justify-content: flex-end; margin-bottom: -1%;}
+
+.header-footer span{padding-bottom: 2.5vw;}
+
+.hfooter-social a{margin-right: 3vw;}
+
+.hfooter-social img{width: 3vw;}
+
+.menuicon {bottom: 3vw;}
+
+
+}
+    
+</style>
+
+<div class="header-wrapper">
+	<!-- Menu Content -->
+	<div class="menu-content">
+		<div class="nav-links">
+			<div class="desk-nav nav-home"> <a href="./index.html">HOME</a> </div>
+			<div class="desk-nav nav-skills"> <a href="./skills.html">SKILLS</a> </div>
+			<div class="desk-nav nav-work"> <a href="./portfolio.html">WORK</a> </div>
+			<div class="desk-nav nav-about"> <a href="./about.html">ABOUT</a> </div>
+		</div>
+		<div class="header-contact">
+			<div class="hcontact-circle"> <a href="#contact-footer">contact me</a> </div>
+		</div>
+		<div class="header-footer"> <span class="hfooter-text">Tap here to connect me with</span>
+			<div class="hfooter-social">
+				<a href=""><img id="nav-wa" src="assets/icons/nav-whatsapp.svg" alt=""></a>
+				<a href=""><img id="nav-ins" src="assets/icons/nav-instagram.svg" alt=""></a>
+				<a href=""><img id="nav-lin" src="assets/icons/nav-linkedin.svg" alt=""></a>
+				<a href=""><img id="nav-fb" style="border: solid 1px white;" src="assets/icons/nav-facebook.svg" alt=""></a>
+			</div>
+		</div>
+	</div>
+	<!-- Menu Icon -->
+	<div class="menuicon" id="menuicon">
+		<div class="icon"> <span class="bar1"></span> <span class="bar2"></span> </div>
+		<svg height="100" width="100" class="red">
+			<circle class="menu-circle" id="menu-circle" cx="25" cy="25" r="24" stroke="grey" stroke-width="1" fill="transparent" /> </svg>
+	</div>
+</div>
+
+<script defer>
+
+$('.menuicon').click(function() {
+
+$('.menu-content').toggleClass('menu-content-open');
+$('.bar1').toggleClass('rotate-bar1');
+$('.bar2').toggleClass('rotate-bar2');
+$('.menuicon').toggleClass('rotate-menuicon');
+$('body').toggleClass('body-menu-open');
+
+document.getElementById("menu-circle").classList.toggle("menu-circle-active");
+
+});
+
+</script>

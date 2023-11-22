@@ -1,0 +1,164 @@
+<style>
+
+/*================= Footer =================*/
+
+footer{position: fixed; bottom: 0; width: 100%; height: fit-content; z-index: -1; background: var(--black);}
+
+footer img{background: transparent;} 
+
+#ft-container{color: rgba(255,255,255,0.9); padding-top: 5vw;}
+
+.ft-wrapper{display: flex; overflow-x: hidden; padding-bottom: 3vw;}
+
+.ft-wrapper p{font-size: 3.1vw !important;}
+
+.ft-wrapper a{font-size: 3.1vw !important;}
+
+.default-ft-flex{display: flex;}
+
+.deskf-nav{display: none;}
+
+
+/*== Contact Bold ==*/
+
+.ft-contact-text{min-width: 20%; color: transparent; -webkit-text-stroke: 0.5px #fff; font-size: 22vw; font-style: italic;}
+
+.ft-contact-text div{transform: rotate(90deg) translateY(-18.5vw) translateX(11vw); transform-origin: bottom left; height: 5vw; width: max-content;}
+
+.ft-contact-text h4{transform: scale(-1);}
+
+
+/*== Content ==*/
+
+.ft-content{min-width: 80%; padding: 0vw 4vw 0vw 15vw; display: flex; flex-wrap: wrap; flex-direction: column;}
+
+
+/*== contact links ==*/
+
+.ft-contact{padding-top: 14vw;}
+
+.ft-contact-para{padding-bottom: 12vw; padding-right: 11vw;}
+
+.ft-contact-links{justify-content: unset; flex-direction: column;}
+
+.ft-call, .ft-mail, .ft-whatsapp{align-items: center; padding-bottom: 9vw;}
+
+.ft-whatsapp{padding-bottom: 0vw;}
+
+.ft-contact-links img{width: 10%; margin-right: 4vw; opacity: 0.8;}
+
+
+/*== Social Links ==*/
+
+.ft-social{padding: 13vw 0vw; border-top: 1px solid #323232; border-bottom: 1px solid #323232; margin: 13vw 0vw;}
+
+.ft-social a{width: 9%; margin-right: 16vw;}
+
+.ft-social a:nth-child(3){margin-right: 0vw;}
+
+.ft-social a img{height: auto;}
+
+
+/*== credit ==*/
+
+.ft-credit{padding: 6vw 2.7vw; font-size: 3vw; font-weight: 200; display: flex; justify-content: space-between; color: rgb(143, 143, 143);}
+
+.ft-credit a{font-size: 2.7vw !important; color: inherit;}
+
+.ft-credit a:hover{color: #fff;}
+
+
+/* =========== Desk ========*/
+
+@media(min-width: 768px){
+
+#ft-container{padding: 3vw 5.8vw 0;}
+
+.ft-wrapper{display: flex; padding-bottom: 0vw; flex-wrap: wrap;}
+
+.ft-wrapper p{font-size: 1.2vw !important; font-weight: 200 !important;}
+
+.ft-wrapper a{font-size: 1.1vw !important; font-weight: 200 !important;}
+
+
+/*== Contact Bold ==*/
+
+.ft-contact-text{min-width: 60%; max-width: 60%; font-size: 5vw; padding: 0vw;  -webkit-text-stroke: 1px #fff;}
+
+.ft-contact-text div{transform: rotate(00deg) translateY(0vw) translateX(0vw); height: auto;}
+
+.ft-contact-text h4{transform: scale(1);}
+
+
+/*== Content ==*/
+
+.ft-content{min-width: 100%; padding: 4vw 0vw; display: flex; flex-wrap: wrap; flex-direction: row;}
+
+
+/*contact links*/
+
+.ft-contact{padding: 0vw 0vw 0.7%; min-width: 70%; max-width: 70%;}
+
+.ft-contact-para{padding-bottom: 3vw; padding-right: 40%;}
+
+.ft-contact-links{justify-content: unset; flex-direction: column;}
+
+.ft-call, .ft-mail, .ft-whatsapp{align-items: center; padding-bottom: 2vw;}
+
+.ft-whatsapp{padding-bottom: 0vw;}
+
+.ft-contact-links img{width: 3%; margin-right: 2vw;}
+
+
+/*Social Links*/
+
+.ft-social{padding: 0vw; margin: 0vw; min-width: 30%; max-width: 30%; border: none; flex-direction: column; justify-content: flex-end; align-items: flex-end;}
+
+.ft-social a{width: 6%; margin-right: 0vw; margin-top: 15%;}
+
+
+
+.deskf-nav{display: block; min-width: 40%; text-align: right; font-size: 1.2vw; padding-top: 2%;}
+
+.deskf-nav a{margin-left: 10%;}
+
+
+
+/*credit*/
+
+.ft-credit{padding: 2vw 0vw 1.5vw; font-size: 0.7vw; border-top: solid 1px #323232;}
+
+.ft-credit a{font-size: 0.7vw !important;}
+
+
+}
+
+</style>
+
+<div id="ft-container">
+	<div class="ft-wrapper" id="contact-footer">
+		<div class="ft-contact-text">
+			<div>
+				<h4>CONTACT</h4> </div>
+		</div>
+		<div class="deskf-nav"> <a href="./index.html">Home</a> <a href="./skills.html">Skills</a> <a href="./portfolio.html">Work</a> <a href="./about.html">About</a> </div>
+		<div class="ft-content">
+			<div class="ft-contact">
+				<div class="ft-contact-para">
+					<p>Have a work-related inquiry? I would love to hear from you and promise to respond you as soon as possible.</p>
+				</div>
+				<div class="default-ft-flex ft-contact-links">
+					<div class="default-ft-flex ft-call"> <img src="assets/icons/ft-phone.svg" alt=""> <a href="#">Click to call me</a> </div>
+					<div class="default-ft-flex ft-mail"> <img src="assets/icons/ft-mail.svg" alt=""> <a href="#">Click to mail me</a> </div>
+					<div class="default-ft-flex ft-whatsapp"> <img src="assets/icons/ft-whatsapp.svg" alt=""> <a href="#">Click to whatsapp</a> </div>
+				</div>
+			</div>
+			<div class="default-ft-flex ft-social">
+				<a href=""><img src="assets/icons/ft-instagram.svg" alt=""></a>
+				<a href=""><img src="assets/icons/ft-linkedin.svg" alt=""></a>
+				<a href=""><img src="assets/icons/ft-facebook.svg" alt=""></a>
+			</div>
+		</div>
+	</div>
+	<div class="ft-credit"> <span>© 2021 Gaurav Art - All Rights Reserved</span> <span><a href="http://instagram.com/sahil.web">by Sahil.web</a></span> </div>
+</div>
